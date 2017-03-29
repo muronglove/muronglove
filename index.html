@@ -109,7 +109,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/shenmegui/" style="font-size: 10px;">shenmegui</a> <a href="/tags/tag1/" style="font-size: 10px;">tag1</a> <a href="/tags/tag2/" style="font-size: 10px;">tag2</a> <a href="/tags/vim/" style="font-size: 10px;">vim</a> <a href="/tags/前端/" style="font-size: 20px;">前端</a> <a href="/tags/反思/" style="font-size: 10px;">反思</a> <a href="/tags/技能/" style="font-size: 15px;">技能</a> <a href="/tags/日常/" style="font-size: 10px;">日常</a> <a href="/tags/笔记/" style="font-size: 15px;">笔记</a> <a href="/tags/随笔/" style="font-size: 10px;">随笔</a>
+						<a href="/tags/problems/" style="font-size: 10px;">problems</a> <a href="/tags/shenmegui/" style="font-size: 10px;">shenmegui</a> <a href="/tags/tag1/" style="font-size: 10px;">tag1</a> <a href="/tags/tag2/" style="font-size: 10px;">tag2</a> <a href="/tags/vim/" style="font-size: 10px;">vim</a> <a href="/tags/前端/" style="font-size: 20px;">前端</a> <a href="/tags/反思/" style="font-size: 10px;">反思</a> <a href="/tags/技能/" style="font-size: 15px;">技能</a> <a href="/tags/日常/" style="font-size: 10px;">日常</a> <a href="/tags/笔记/" style="font-size: 15px;">笔记</a> <a href="/tags/随笔/" style="font-size: 10px;">随笔</a>
 					</div>
 				</section>
 				
@@ -177,11 +177,11 @@
 
       <div class="body-wrap">
   
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-lalala" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2017/03/29/hello-world/" class="article-date">
-  	<time datetime="2017-03-29T04:14:51.000Z" itemprop="datePublished">2017-03-29</time>
+      <a href="/2017/03/29/lalala/" class="article-date">
+  	<time datetime="2017-03-29T05:30:09.000Z" itemprop="datePublished">2017-03-29</time>
 </a>
     </div>
   
@@ -194,7 +194,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/29/hello-world/">Hello World</a>
+      <a class="article-title" href="/2017/03/29/lalala/">lalala</a>
     </h1>
   
 
@@ -203,15 +203,15 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <p>#hexo重用之路</p>
+<p>###很久不用hexo了，今天突然想用一下，结果发现了很多问题，如下：</p>
+<ul>
+<li>Error: Module version mismatch. Expected 48, got 47.  hexo使用的时候会有这个提示，查了一下，应该是npm版本提升了之后不兼容的问题，尝试升级hexo和npm之后，也没能解决，不过并不影响使用</li>
+<li>使用hexo时没有进入相应的文件夹，hexo的使用必然要依靠文件夹，如果没有文件夹的话可以使用『hexo init blog』来创建一个blog文件夹，文件夹出现问题 的时候可以使用『hexo init』来恢复出厂设置，然后配置config.yml,其中最重要的是『deploy:<br>type: git<br>repository: git@github.com:muronglove/muronglove.git<br>branch: gh-pages』部分，这部分设定了github的地址，还有一些页面的描述，不再赘述</li>
+<li>如果使用了git init，那么可能会把根目录传到github上，这个时候要参照条目2</li>
+<li>建立私钥和公钥，在写博客的时候就不需要重新输入密码了，网址：<a href="http://www.cnblogs.com/ayseeing/p/3572582.html" target="_blank" rel="external">http://www.cnblogs.com/ayseeing/p/3572582.html</a></li>
+</ul>
+<p>#####总结：温故而知新，知识要时常温习，在用到的时候才不会像新学的一样，以后要吸取这个教训！</p>
 
       
     </div>
@@ -219,6 +219,10 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/problems/">problems</a></li></ul>
+	</div>
+
       
 
       
